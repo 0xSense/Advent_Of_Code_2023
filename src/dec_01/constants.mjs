@@ -1,4 +1,4 @@
-let documentArrayOfValues = [
+export const documentArrayOfValues = [
     'five8b',
     '2733vmmpknvgr',
     '3oneeighttwo',

@@ -1,12 +1,23 @@
+import { documentArrayOfValues } from './constants.mjs';
+
 /* December 1st advent of Code 
- Snow Production 
- 50 locations
- calibration valued are record by 
- receiving the first digit and the last digit in a string
+ calibration values are recorded by 
+ receiving the first digit and the last digit from a document of
+ values with characters and digits thrown together
 */
 
-function sum(a, b) {
-    return a + b;
-}
+export async function splitStrings(array)
+{
+    return array.map(element => {
+        return element.split(''); 
+    });
+};
 
-module.exports = sum;
+export async function filterForNumbers(segmentedArray)
+{
+    console.log( segmentedArray);
+    segmentedArray.filter((element) => Number(element));
+};
+
+let segmentedStrings = splitStrings(documentArrayOfValues);
+filterForNumbers();
